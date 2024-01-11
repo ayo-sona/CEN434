@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="jquery-3.7.1.slim.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="stylesheet" href="stuff.css">
+    <title>Badminton Club Sign-up Form</title>
+</head>
+<body>
+    <div id="clickme" style= "width: 400px; height: 400px; background-color: aqua"></div>
+    <a id="changecolor" href=""> change color</a>
+
+    <form action="submit_form.php" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required><br><br>
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="matriculation">Matriculation Number:</label>
+        <input type="text" id="matriculation" name="matriculation"><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="level">Your Level:</label>
+        <select id="level" name="level">
+            <option value="100">100 Level</option>
+            <option value="200">200 Level</option>
+            <option value="300">300 Level</option>
+            <option value="400">400 Level</option>
+            <option value="500">500 Level</option>
+        </select><br><br>
+        <label for="Hall"> What hall are you in? </label>
+        <select id=" Hall" name="Hall">
+            <option value="Peter_hall">Peter Hall</option>
+            <option value="John_hall">John Hall</option>
+            <option value="Daniel_hall">Daniel Hall</option>
+            <option value="Joseph_hall">Joseph Hall</option>
+            <option value="Paul_hall">Paul Hall</option>
+            <option value="Dorcas_hall">Dorcas Hall</option>
+            <option value="Lydia_hall">Lydia Hall</option>
+            <option value="Esther_hall">Esther Hall</option>
+            <option value="Deborah_hall">Deborah Hall</option>
+            <option value="Mary_hall">Mary Hall</option>
+        </select>
+
+    </form>
+    <script>
+        $(window).ready(function () {
+            $('#changecolor').click(function () {
+                $('#clickme').css("background-color", "red");
+            })
+        })
+    </script>
+</body>
+</html>
